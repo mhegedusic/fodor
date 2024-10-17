@@ -10,7 +10,7 @@ const Header = () => {
     <a href="/"><img src="https://i.ibb.co/17N9N4b/logo.jpg" alt="logo" /></a>
       <nav>
         <ul className={styles.ul}>
-          <li><Link to="/">Početna</Link></li>
+          <li><Link to="/fodor">Početna</Link></li>
           <li><Link to="/about">O nama</Link></li>
           <li><Link to="/gallery">Galerija</Link></li>
           <li><Link to="/contact">Kontakt</Link></li>
