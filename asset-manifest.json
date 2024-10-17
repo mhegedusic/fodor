@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fodor/static/css/main.0d538641.css",
+    "main.js": "/fodor/static/js/main.2a0feeb0.js",
+    "static/js/453.7a3864fc.chunk.js": "/fodor/static/js/453.7a3864fc.chunk.js",
+    "index.html": "/fodor/index.html",
+    "main.0d538641.css.map": "/fodor/static/css/main.0d538641.css.map",
+    "main.2a0feeb0.js.map": "/fodor/static/js/main.2a0feeb0.js.map",
+    "453.7a3864fc.chunk.js.map": "/fodor/static/js/453.7a3864fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d538641.css",
+    "static/js/main.2a0feeb0.js"
+  ]
+}
