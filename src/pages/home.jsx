@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../pages/Contact.module.css'
 
+
 const Home = () => {
   return (
     <div className={styles.banner}>
