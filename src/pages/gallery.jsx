@@ -15,6 +15,36 @@ const images = [
     thumbnail: 'https://i.ibb.co/GHmtyMQ/fodor2.jpg',
     originalClass: styles.galleryImage,
   },
+  {
+    original: 'https://i.ibb.co/4Wrgsdw/fodor7.jpg',
+    thumbnail: 'https://i.ibb.co/p2FrWy6/fodor7.jpg',
+    originalClass: styles.galleryImage,
+  },
+  {
+    original: 'https://i.ibb.co/Ry9R2DP/fodor6.jpg',
+    thumbnail: 'https://i.ibb.co/Qdfy9Kn/fodor6.jpg',
+    originalClass: styles.galleryImage,
+  },
+  {
+    original: 'https://i.ibb.co/VwTzYdN/fodor5.jpg',
+    thumbnail: 'https://i.ibb.co/LN1cdMP/fodor5.jpg',
+    originalClass: styles.galleryImage,
+  },
+  {
+    original: 'https://i.ibb.co/8cz2pZh/fodor4.jpg',
+    thumbnail: 'https://i.ibb.co/bJHLZ9f/fodor4.jpg',
+    originalClass: styles.galleryImage,
+  },
+  {
+    original: 'https://i.ibb.co/XCkSgX7/fodor3.jpg',
+    thumbnail: 'https://i.ibb.co/x78J0h1/fodor3.jpg',
+    originalClass: styles.galleryImage,
+  },
+  {
+    original: 'https://i.ibb.co/18cNBQ2/IMG-82e65c93331932a03537fd9c90572f17-V.jpg',
+    thumbnail: 'https://i.ibb.co/86kwGs8/IMG-82e65c93331932a03537fd9c90572f17-V.jpg',
+    originalClass: styles.galleryImage,
+  },
   // Dodajte više slika po potrebi
 ];
 
