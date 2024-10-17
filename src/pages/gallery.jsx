@@ -43,7 +43,6 @@ const images = [
 const Gallery = () => {
   return (
     <div>
-      <h2>Galerija</h2>
       <ImageGallery items={images} />
     </div>
   );
