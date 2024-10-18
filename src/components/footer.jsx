@@ -13,6 +13,7 @@ const Footer = () => {
       <hr />
       <strong>Vlasnik: Ivan Fodor <br />
       Adresa: Varaždinska 84 <br />
+      Subotica Podravska <br />
       <a href="tel:0981792824">Tel: 0981792824</a> <br />
       <a href="mailto:ivanfodor777@gmail.com">E-mail</a></strong>
       
