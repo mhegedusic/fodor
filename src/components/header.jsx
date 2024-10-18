@@ -7,10 +7,10 @@ const Header = () => {
     <>
     
     <header className={styles.header1}>
-    <a href="https://mhegedusic.github.io/fodor/"><img src="https://i.ibb.co/17N9N4b/logo.jpg" alt="logo" /></a>
+    <a href="https://mhegedusic.github.io/"><img src="https://i.ibb.co/17N9N4b/logo.jpg" alt="logo" /></a>
       <nav>
         <ul className={styles.ul}>
-          <li><Link to="/fodor">Početna</Link></li>
+          <li><Link to="/">Početna</Link></li>
           <li><Link to="/about">O nama</Link></li>
           <li><Link to="/gallery">Galerija</Link></li>
           <li><Link to="/contact">Kontakt</Link></li>
