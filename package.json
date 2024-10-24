@@ -2,7 +2,7 @@
   "name": "namjestaj",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mhegedusic.github.io",
+  "homepage": "https://www.namjestajfodor.hr",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.17.0",
