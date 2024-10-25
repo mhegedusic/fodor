@@ -94,7 +94,7 @@ header {
 }
 
 .galleryImage {
-  width: 400px; /* Adjust the width as needed */
+  width: 300px; /* Adjust the width as needed */
   height: 100%; /* Maintain aspect ratio */
   margin: 0 auto;
 }
