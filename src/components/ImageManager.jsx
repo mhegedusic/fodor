@@ -21,7 +21,6 @@ const ImageManager = ({ images, setImages, currentIndex }) => {
   return (
     <div>
       <h2>Upravljanje slikama</h2>
-
       <div>
         <h3>Dodaj novu sliku</h3>
         <input 
@@ -38,7 +37,6 @@ const ImageManager = ({ images, setImages, currentIndex }) => {
         />
         <button onClick={handleAddImage}>Dodaj sliku</button>
       </div>
-
       <div>
         <h3>Obriši trenutnu sliku</h3>
         <button onClick={handleDeleteImage}>Obriši sliku</button>
