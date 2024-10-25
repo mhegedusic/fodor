@@ -12,46 +12,7 @@ const App = () => {
     return storedImages
       ? JSON.parse(storedImages)
       : [
-          {
-            original: "https://i.ibb.co/MktKnCp/fodor1.jpg",
-            thumbnail: 'https://i.ibb.co/8gfGM72/fodor1.jpg',
-            description: 'opis prve slike',
-          },
-          {
-            original: 'https://i.ibb.co/hY0ZbdF/fodor2.jpg',
-            thumbnail: 'https://i.ibb.co/GHmtyMQ/fodor2.jpg',
-            originalClass: styles.galleryImage,
-          },
-          {
-            original: 'https://i.ibb.co/4Wrgsdw/fodor7.jpg',
-            thumbnail: 'https://i.ibb.co/p2FrWy6/fodor7.jpg',
-            originalClass: styles.galleryImage,
-          },
-          {
-            original: 'https://i.ibb.co/Ry9R2DP/fodor6.jpg',
-            thumbnail: 'https://i.ibb.co/Qdfy9Kn/fodor6.jpg',
-            originalClass: styles.galleryImage,
-          },
-          {
-            original: 'https://i.ibb.co/VwTzYdN/fodor5.jpg',
-            thumbnail: 'https://i.ibb.co/LN1cdMP/fodor5.jpg',
-            originalClass: styles.galleryImage,
-          },
-          {
-            original: 'https://i.ibb.co/8cz2pZh/fodor4.jpg',
-            thumbnail: 'https://i.ibb.co/bJHLZ9f/fodor4.jpg',
-            originalClass: styles.galleryImage,
-          },
-          {
-            original: 'https://i.ibb.co/XCkSgX7/fodor3.jpg',
-            thumbnail: 'https://i.ibb.co/x78J0h1/fodor3.jpg',
-            originalClass: styles.galleryImage,
-          },
-          {
-            original: 'https://i.ibb.co/18cNBQ2/IMG-82e65c93331932a03537fd9c90572f17-V.jpg',
-            thumbnail: 'https://i.ibb.co/86kwGs8/IMG-82e65c93331932a03537fd9c90572f17-V.jpg',
-            originalClass: styles.galleryImage,
-          },
+          
           {
             original: "https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg",
             thumbnail: 'https://i.ibb.co/2kkSZ3f/kuhinjaskrivenimehanizam.jpg',
