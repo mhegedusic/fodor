@@ -55,11 +55,48 @@ const Gallery = () => {
     description: 'ormar'
   },
   {
-    original: "https://i.ibb.co/sy6Fr8t/ormar1.jpg",
-    thumbnail: 'https://i.ibb.co/72RGFsb/ormar1.jpg',
+    original: "https://i.ibb.co/svRYKwc/dekoracijaledrasvjeta.jpg",
+    thumbnail: 'https://i.ibb.co/VW94gSb/dekoracijaledrasvjeta.jpg',
     originalClass: styles.galleryImage,
-    description: 'ormar'
+    description: 'Led rasvjeta kao dekoracija'
+  },
+  {
+    original: "https://i.ibb.co/CbcvsJq/kuhinjaspogledom.jpg",
+    thumbnail: 'https://i.ibb.co/F5rJqs9/kuhinjaspogledom.jpg',
+    originalClass: styles.galleryImage,
+    description: 'Prostrana kuhinja sa prirodnim svjetlom'
+  },
+  {
+    original: "https://i.ibb.co/Y78dKBT/zidnostropnaoblogairasvjeta.jpg",
+    thumbnail: 'https://i.ibb.co/9924fH3/zidnostropnaoblogairasvjeta.jpg',
+    originalClass: styles.galleryImage,
+    description: 'Zidna i stropna obloga sa led rasvjetom'
+  },
+  {
+    original: "https://i.ibb.co/Brz5pJz/zidnaoblogailedrasvejta.jpg",
+    thumbnail: 'https://i.ibb.co/Brz5pJz/zidnaoblogailedrasvejta.jpg',
+    originalClass: styles.galleryImage,
+    description: 'Zidna obloga i led rasvjeta kao dekoracija'
+  },
+  {
+    original: "https://i.ibb.co/nnhMqMw/krevetiradnistol.jpg",
+    thumbnail: 'https://i.ibb.co/z7KVWVm/krevetiradnistol.jpg',
+    originalClass: styles.galleryImage,
+    description: 'Radni stol spojen s krevetom na kat'
+  },
+  {
+    original: "https://i.ibb.co/KbfnkJT/klasi-neru-ice.jpg",
+    thumbnail: 'https://i.ibb.co/JmGZ49D/klasi-neru-ice.jpg',
+    originalClass: styles.galleryImage,
+    description: 'Elegantna kuhinja sa klasičnim ručicama'
+  },
+  {
+    original: "https://i.ibb.co/cXsjvfx/komodatv.jpg",
+    thumbnail: 'https://i.ibb.co/mFP3BZS/komodatv.jpg',
+    originalClass: styles.galleryImage,
+    description: 'Komoda za tv'
   }
+  
   ];
 
   return (
