@@ -3,9 +3,9 @@ import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import styles from './Contact.module.css';
 
-const Gallery = ({ images }) => {
+const Gallery = () => {
   // Formatiraj slike za react-image-gallery
-  const formattedImages = images.map((image) => (
+  const images = [
   {
     original: "https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg",
     thumbnail: 'https://i.ibb.co/2kkSZ3f/kuhinjaskrivenimehanizam.jpg',
@@ -60,11 +60,11 @@ const Gallery = ({ images }) => {
     originalClass: styles.galleryImage,
     description: 'ormar'
   }
-  ));
+  ];
 
   return (
     <div className="gallery-container">
-      <ImageGallery items={formattedImages} />
+      <ImageGallery items={images} />
     </div>
   );
 };
