@@ -12,7 +12,7 @@ const images = [
   { id: 7, src: 'https://i.ibb.co/svRYKwc/dekoracijaledrasvjeta.jpg', alt: 'Image 3', description: 'Led rasvjeta kao dekoracija' },
   { id: 7, src: 'https://i.ibb.co/CbcvsJq/kuhinjaspogledom.jpg', alt: 'Image 3', description: 'Prostrana svjetla kuhinja' },
   { id: 7, src: 'https://i.ibb.co/Y78dKBT/zidnostropnaoblogairasvjeta.jpg', alt: 'Image 3', description: 'Zidna i stropna obloga sa led rasvjetom' },
-  { id: 7, src: 'https://i.ibb.co/Brz5pJz/zidnaoblogailedrasvejta.jpg', alt: 'Image 3', description: 'Zidna obloga sa dekoracijom led rasvjete' },
+  { id: 7, src: 'https://i.ibb.co/D8VHJFV/zidnaoblogailedrasvejta.jpg', alt: 'Image 3', description: 'Zidna obloga sa dekoracijom led rasvjete' },
   { id: 7, src: 'https://i.ibb.co/nnhMqMw/krevetiradnistol.jpg', alt: 'Image 3', description: 'Radni stol sa krevetom na kat, idealno za dječju sobu' },
   { id: 7, src: 'https://i.ibb.co/KbfnkJT/klasi-neru-ice.jpg', alt: 'Image 3', description: 'Kuhinja sa klasičnim ručicama' },
   
