@@ -1,202 +1,218 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Gallery from 'react-photo-gallery'; // Ispravno uvozimo kao 'Gallery'
+import Modal from 'react-modal';
+
+// Postavi modal stilove
+Modal.setAppElement('#root'); // Postavi root element za pristupačnost
 
 const images = [
-  { id: 1, src: 'https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg', alt: 'Image 1', description: 'Kuhinja sa skrivenim mehanizmom' },
-  { id: 2, src: 'https://i.ibb.co/NnFpHYf/kuhinjazg.jpg', alt: 'Image 2', description: 'Elegantna kuhinja' },
-  { id: 3, src: 'https://i.ibb.co/f0YBxtT/kupaonica2.jpg', alt: 'Image 3', description: 'Kupaonica' },
-  { id: 4, src: 'https://i.ibb.co/MV50YN5/kupaonica.jpg', alt: 'Image 3', description: 'Kupaonica' },
-  { id: 5, src: 'https://i.ibb.co/BLy8hqT/ladice.jpg', alt: 'Image 3', description: 'Komoda sa ladicama' },
-  { id: 6, src: 'https://i.ibb.co/LNWgBv8/krevet.jpg', alt: 'Image 3', description: 'Krevet' },
-  { id: 7, src: 'https://i.ibb.co/1mC3BCG/komoda.jpg', alt: 'Image 3', description: 'Komoda' },
-  { id: 7, src: 'https://i.ibb.co/R6fX320/ormar2.jpg', alt: 'Image 3', description: 'Ormar' },
-  { id: 7, src: 'https://i.ibb.co/svRYKwc/dekoracijaledrasvjeta.jpg', alt: 'Image 3', description: 'Led rasvjeta kao dekoracija' },
-  { id: 7, src: 'https://i.ibb.co/CbcvsJq/kuhinjaspogledom.jpg', alt: 'Image 3', description: 'Prostrana svjetla kuhinja' },
-  { id: 7, src: 'https://i.ibb.co/Y78dKBT/zidnostropnaoblogairasvjeta.jpg', alt: 'Image 3', description: 'Zidna i stropna obloga sa led rasvjetom' },
-  { id: 7, src: 'https://i.ibb.co/D8VHJFV/zidnaoblogailedrasvejta.jpg', alt: 'Image 3', description: 'Zidna obloga sa dekoracijom led rasvjete' },
-  { id: 7, src: 'https://i.ibb.co/nnhMqMw/krevetiradnistol.jpg', alt: 'Image 3', description: 'Radni stol sa krevetom na kat, idealno za dječju sobu' },
-  { id: 7, src: 'https://i.ibb.co/KbfnkJT/klasi-neru-ice.jpg', alt: 'Image 3', description: 'Kuhinja sa klasičnim ručicama' },
-  
-  // Dodaj više slika po potrebi
+  {
+    src: 'https://i.ibb.co/KbfnkJT/klasi-neru-ice.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 1',
+  },
+  {
+    src: 'https://i.ibb.co/nnhMqMw/krevetiradnistol.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 2',
+  },
+  {
+    src: 'https://i.ibb.co/D8VHJFV/zidnaoblogailedrasvejta.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/Y78dKBT/zidnostropnaoblogairasvjeta.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/svRYKwc/dekoracijaledrasvjeta.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/CbcvsJq/kuhinjaspogledom.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/sy6Fr8t/ormar1.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/R6fX320/ormar2.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/1mC3BCG/komoda.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/LNWgBv8/krevet.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/BLy8hqT/ladice.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/MV50YN5/kupaonica.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/f0YBxtT/kupaonica2.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/NnFpHYf/kuhinjazg.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  {
+    src: 'https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg',
+    width: 4,
+    height: 3,
+    description: 'Opis slike 3',
+  },
+  // Dodajte više slika po potrebi
 ];
 
-const Gallery = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+const GalleryPage = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(null);
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const openModal = (index) => {
-    setCurrentIndex(index);
-    setIsOpen(true);
+  const openModal = (event, { index }) => {
+    setCurrentIndex(index); // Postavljamo index trenutne slike
+    setModalIsOpen(true);   // Otvaramo modal
   };
 
   const closeModal = () => {
-    setIsOpen(false);
-  };
-
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+    setModalIsOpen(false);
+    setCurrentIndex(null);
   };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
+    if (currentIndex !== null) {
+      setCurrentIndex((currentIndex + 1) % images.length);
+    }
   };
 
-  const modalStyle = {
-    maxWidth: isMobile ? '90%' : '80%',
-    maxHeight: isMobile ? '90%' : '80%',
-    textAlign: 'center',
-    color: 'white',
-    display: 'flex',
-    alignItems: 'center',
-    flexDirection: 'column',
+  const goToPrevious = () => {
+    if (currentIndex !== null) {
+      setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+    }
   };
 
-  const modalImageStyle = {
-    width: isMobile ? '90%' : '100%',
-    height: isMobile ? '400px' : '100%',
-    borderRadius: '8px',
-  };
-
-  const galleryStyle = {
-    display: 'grid',
-    gridTemplateColumns: isMobile ? 'repeat(auto-fill, minmax(100px, 1fr))' : 'repeat(auto-fill, minmax(200px, 1fr))',
-    gap: '16px',
-    padding: '16px',
-  };
+  const currentImage = currentIndex !== null ? images[currentIndex] : null;
 
   return (
-    <div style={galleryStyle}>
-      {images.map((image, index) => (
-        <div key={image.id} style={imageContainerStyle}>
-          <img
-            src={image.src}
-            alt={image.alt}
-            style={imageStyle}
-            onClick={() => openModal(index)}
-          />
-        </div>
-      ))}
+    <div>
+      <Gallery photos={images} onClick={openModal} /> {/* Prikazujemo galeriju */}
 
-      {isOpen && (
-        <div style={modalOverlayStyle} onClick={closeModal}>
-          <div style={modalStyle} onClick={(e) => e.stopPropagation()}>
-            <span style={closeButtonStyle} onClick={closeModal}>
-              &times;
-            </span>
-
-            {/* Strelica za prethodnu sliku */}
-            <button style={{ ...navButtonStyle, ...prevButtonStyle }} onClick={goToPrevious}>
-              &#10094;
-            </button>
-
-            {/* Slika i opis zajedno */}
-            <div style={imageAndDescriptionContainerStyle}>
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={modalStyle}>
+        {currentImage ? (
+          <div style={modalContentStyle}>
+            <button onClick={goToPrevious} style={navButtonStyle}>❮</button>
+            <div style={imageContainerStyle}>
               <img
-                src={images[currentIndex].src}
-                alt={images[currentIndex].alt}
+                src={currentImage.src}
+                alt={currentImage.description}
                 style={modalImageStyle}
               />
-              <p style={descriptionStyle}>{images[currentIndex].description}</p>
+              <p style={descriptionStyle}>{currentImage.description}</p>
             </div>
-
-            {/* Strelica za sljedeću sliku */}
-            <button style={{ ...navButtonStyle, ...nextButtonStyle }} onClick={goToNext}>
-              &#10095;
-            </button>
+            <button onClick={goToNext} style={navButtonStyle}>❯</button>
           </div>
-        </div>
-      )}
+        ) : (
+          <p>Slika nije dostupna</p>
+        )}
+        <button onClick={closeModal} style={closeButtonStyle}>Zatvori</button>
+      </Modal>
     </div>
   );
 };
 
-// Stilovi za galeriju i modal
-
-
-const imageContainerStyle = {
-  borderRadius: '8px',
-  overflow: 'hidden',
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-  cursor: 'pointer',
+// Stilovi za modal
+const modalStyle = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    transform: 'translate(-50%, -50%)',
+    backgroundColor: '#222',
+    border: 'none',
+    borderRadius: '8px',
+    padding: '20px',
+    color: 'white',
+    textAlign: 'center',
+    display: 'flex',
+    alignItems: 'center',
+  },
 };
 
-const imageStyle = {
-  width: '100%',
-  height: '300px',
-  display: 'block',
-};
-
-const modalOverlayStyle = {
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  width: '100%',
-  height: '100%',
-  backgroundColor: 'rgba(0, 0, 0, 0.8)',
+const modalContentStyle = {
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center',
-  zIndex: 1000,
 };
 
+const navButtonStyle = {
+  fontSize: '2rem',
+  backgroundColor: 'transparent',
+  color: 'white',
+  border: 'none',
+  cursor: 'pointer',
+  padding: '10px',
+};
 
-
-const imageAndDescriptionContainerStyle = {
+const imageContainerStyle = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
 };
 
+const modalImageStyle = {
+  width: '100%',
+  height: 'auto',
+  borderRadius: '8px',
+};
 
 const descriptionStyle = {
   marginTop: '10px',
-  fontSize: '18px',
+  fontSize: '16px',
   fontStyle: 'italic',
-  color: 'white',
-};
-
-// Stilovi za strelice
-const navButtonStyle = {
-  fontSize: '40px',
-  color: 'white',
-  backgroundColor: 'transparent',
-  border: 'none',
-  cursor: 'pointer',
-  zIndex: 1001,
-};
-
-const prevButtonStyle = {
-  position: 'absolute',
-  left: '-50px', // Postavlja strelicu lijevo od slike
-  top: '50%',
-  transform: 'translateY(-50%)',
-};
-
-const nextButtonStyle = {
-  position: 'absolute',
-  right: '-50px', // Postavlja strelicu desno od slike
-  top: '50%',
-  transform: 'translateY(-50%)',
 };
 
 const closeButtonStyle = {
-  position: 'absolute',
-  top: '10px',
-  right: '20px',
-  fontSize: '30px',
+  marginTop: '20px',
+  padding: '10px 20px',
+  backgroundColor: '#f44336',
   color: 'white',
+  border: 'none',
+  borderRadius: '5px',
   cursor: 'pointer',
 };
 
-export default Gallery;
+export default GalleryPage;
