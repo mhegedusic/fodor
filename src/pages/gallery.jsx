@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import styles from '../pages/Contact.module.css';
 
 const images = [
   {
@@ -68,13 +69,13 @@ const images = [
 
 const GalleryPage = () => {
   return (
-    <div style={galleryContainerStyle}>
+    <div className={styles.galleryContainer}>
       <ImageGallery
         items={images}
         showThumbnails={true}
         showFullscreenButton={true}
         showPlayButton={false}
-        additionalClass="app-image-gallery"
+        additionalClass={styles.galleryImage} // Primijenite stil iz CSS modula
       />
     </div>
   );
