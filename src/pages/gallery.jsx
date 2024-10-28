@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const images = [
   { id: 1, src: 'https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg', alt: 'Image 1', description: 'Kuhinja sa skrivenim mehanizmom' },
@@ -23,6 +23,14 @@ const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const openModal = (index) => {
     setCurrentIndex(index);
     setIsOpen(true);
@@ -42,6 +50,29 @@ const Gallery = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
+  };
+
+  const modalStyle = {
+    maxWidth: isMobile ? '90%' : '80%',
+    maxHeight: isMobile ? '90%' : '80%',
+    textAlign: 'center',
+    color: 'white',
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column',
+  };
+
+  const modalImageStyle = {
+    width: isMobile ? '90%' : '100%',
+    height: isMobile ? '400px' : '100%',
+    borderRadius: '8px',
+  };
+
+  const galleryStyle = {
+    display: 'grid',
+    gridTemplateColumns: isMobile ? 'repeat(auto-fill, minmax(100px, 1fr))' : 'repeat(auto-fill, minmax(200px, 1fr))',
+    gap: '16px',
+    padding: '16px',
   };
 
   return (
@@ -91,12 +122,7 @@ const Gallery = () => {
 };
 
 // Stilovi za galeriju i modal
-const galleryStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-  gap: '16px',
-  padding: '16px',
-};
+
 
 const imageContainerStyle = {
   borderRadius: '8px',
@@ -124,15 +150,7 @@ const modalOverlayStyle = {
   zIndex: 1000,
 };
 
-const modalStyle = {
-  position: 'relative',
-  maxWidth: '80%',
-  maxHeight: '80%',
-  textAlign: 'center',
-  color: 'white',
-  display: 'flex',
-  alignItems: 'center',
-};
+
 
 const imageAndDescriptionContainerStyle = {
   display: 'flex',
@@ -140,11 +158,6 @@ const imageAndDescriptionContainerStyle = {
   alignItems: 'center',
 };
 
-const modalImageStyle = {
-  width: '100%',
-  height: '600px',
-  borderRadius: '8px',
-};
 
 const descriptionStyle = {
   marginTop: '10px',
