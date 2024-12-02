@@ -5,6 +5,52 @@ import styles from '../pages/Contact.module.css';
 
 const images = [
   {
+original: '    https://i.ibb.co/5B5c6w2/465004935-122139986450364828-7230889133202436338-n.jpg',
+thumbnail: 'https://i.ibb.co/bzrdPD7/465004935-122139986450364828-7230889133202436338-n.jpg'
+},
+{    
+  original: 'https://i.ibb.co/m67cych/464385110-122139986420364828-4103171080303880024-n.jpg',
+  thumbnail: "https://i.ibb.co/yWJQkQg/464385110-122139986420364828-4103171080303880024-n.jpg"
+},
+{
+  original:' https://i.ibb.co/ngrmVBV/467439175-122143654040364828-6673578370743579162-n.jpg',
+  thumbnail: "https://i.ibb.co/Wxn5d0d/467439175-122143654040364828-6673578370743579162-n.jpg"
+},
+{
+  original:'https://i.ibb.co/1ZpB0Vh/467611218-122144007212364828-1704423747700574958-n.jpg',
+  thumbnail:"https://i.ibb.co/MnjKgTW/467611218-122144007212364828-1704423747700574958-n.jpg" 
+},
+{
+  original:' https://i.ibb.co/XDR0S8Q/467983767-122144007188364828-5213758730510511690-n.jpg',
+  thumbnail: "https://i.ibb.co/FXTZgVr/467983767-122144007188364828-5213758730510511690-n.jpg" 
+},
+{
+  original:' https://i.ibb.co/41zRzs4/467841473-122144109740364828-5558817813237988502-n.jpg',
+  thumbnail:"https://i.ibb.co/rdY2Yb5/467841473-122144109740364828-5558817813237988502-n.jpg"
+},
+{
+  original: 'https://i.ibb.co/tbLJK1m/468302046-122145316748364828-5586856193968672689-n.jpg',
+  thumbnail:"https://i.ibb.co/xMF7LrC/468302046-122145316748364828-5586856193968672689-n.jpg"
+
+},
+{
+  original: 'https://i.ibb.co/99JPmpb/468619156-122145317156364828-4510689174953955299-n.jpg',
+  thumbnail:"https://i.ibb.co/8DJknmr/468619156-122145317156364828-4510689174953955299-n.jpg"
+
+},
+{
+  original:' https://i.ibb.co/gdZVKfq/468574042-122145317198364828-5774233353394198643-n.jpg',
+  thumbnail:"https://i.ibb.co/JqjQJG6/468574042-122145317198364828-5774233353394198643-n.jpg"
+},
+{
+  original: 'https://i.ibb.co/M6W28Xy/468046079-122145544400364828-213130791878487412-n.jpg',
+  thumbnail:"https://i.ibb.co/nCZg3Wq/468046079-122145544400364828-213130791878487412-n.jpg"
+},
+{
+  original:' https://i.ibb.co/BCQX8nG/468401416-122145544382364828-1908142600604161457-n.jpg',
+  thumbnail:"https://i.ibb.co/6WT36X8/468401416-122145544382364828-1908142600604161457-n.jpg" 
+},
+  {
     original: 'https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg',
     thumbnail: 'https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg',
   },
