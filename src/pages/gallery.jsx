@@ -5,10 +5,6 @@ import styles from '../pages/Contact.module.css';
 
 const images = [
   {
-    original: 'https://i.ibb.co/C8Bhkf5/57eb6972-4acf-491e-bb24-3fb273da1765.jpg',
-    thumbnail: 'https://i.ibb.co/kBKQRtg/57eb6972-4acf-491e-bb24-3fb273da1765.jpg'
-    },
-  {
 original: '    https://i.ibb.co/5B5c6w2/465004935-122139986450364828-7230889133202436338-n.jpg',
 thumbnail: 'https://i.ibb.co/bzrdPD7/465004935-122139986450364828-7230889133202436338-n.jpg'
 },
@@ -66,6 +62,10 @@ thumbnail: 'https://i.ibb.co/bzrdPD7/465004935-122139986450364828-72308891332024
   original: 'https://i.ibb.co/Vxwf3fY/06422a60-f9e7-41fd-89bb-0a3eae485976.jpg',
   thumbnail: 'https://i.ibb.co/Jq3DCDj/06422a60-f9e7-41fd-89bb-0a3eae485976.jpg',
 },
+{
+  original: 'https://i.ibb.co/C8Bhkf5/57eb6972-4acf-491e-bb24-3fb273da1765.jpg',
+  thumbnail: 'https://i.ibb.co/kBKQRtg/57eb6972-4acf-491e-bb24-3fb273da1765.jpg'
+  },
   {
     original: 'https://i.ibb.co/mSX2VbG/465726138-122141155238364828-6763868632914558753-n.jpg',
     thumbnail: 'https://i.ibb.co/DL8vHzt/465726138-122141155238364828-6763868632914558753-n.jpg'
