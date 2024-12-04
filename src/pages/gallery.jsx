@@ -12,10 +12,6 @@ const images = [
 original: '    https://i.ibb.co/5B5c6w2/465004935-122139986450364828-7230889133202436338-n.jpg',
 thumbnail: 'https://i.ibb.co/bzrdPD7/465004935-122139986450364828-7230889133202436338-n.jpg'
 },
-{
-  original: 'https://i.ibb.co/mSX2VbG/465726138-122141155238364828-6763868632914558753-n.jpg',
-  thumbnail: 'https://i.ibb.co/DL8vHzt/465726138-122141155238364828-6763868632914558753-n.jpg'
-  },
 {    
   original: 'https://i.ibb.co/m67cych/464385110-122139986420364828-4103171080303880024-n.jpg',
   thumbnail: "https://i.ibb.co/yWJQkQg/464385110-122139986420364828-4103171080303880024-n.jpg"
@@ -58,10 +54,22 @@ thumbnail: 'https://i.ibb.co/bzrdPD7/465004935-122139986450364828-72308891332024
   original:' https://i.ibb.co/BCQX8nG/468401416-122145544382364828-1908142600604161457-n.jpg',
   thumbnail:"https://i.ibb.co/6WT36X8/468401416-122145544382364828-1908142600604161457-n.jpg" 
 },
+{
+  original: 'https://i.ibb.co/F83hd6D/4e586c1c-9e5e-4df0-8b14-5fb001368787.jpg',
+  thumbnail: 'https://i.ibb.co/vLqcM1j/4e586c1c-9e5e-4df0-8b14-5fb001368787.jpg',
+},
+{
+  original: 'https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg',
+  thumbnail: 'https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg',
+},
+{
+  original: 'https://i.ibb.co/Vxwf3fY/06422a60-f9e7-41fd-89bb-0a3eae485976.jpg',
+  thumbnail: 'https://i.ibb.co/Jq3DCDj/06422a60-f9e7-41fd-89bb-0a3eae485976.jpg',
+},
   {
-    original: 'https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg',
-    thumbnail: 'https://i.ibb.co/YLLX0Bq/kuhinjaskrivenimehanizam.jpg',
-  },
+    original: 'https://i.ibb.co/mSX2VbG/465726138-122141155238364828-6763868632914558753-n.jpg',
+    thumbnail: 'https://i.ibb.co/DL8vHzt/465726138-122141155238364828-6763868632914558753-n.jpg'
+    },
   {
     original: 'https://i.ibb.co/NnFpHYf/kuhinjazg.jpg',
     thumbnail: 'https://i.ibb.co/NnFpHYf/kuhinjazg.jpg',
